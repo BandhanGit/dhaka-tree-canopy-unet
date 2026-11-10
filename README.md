@@ -37,3 +37,11 @@ and the test region was examined during earlier experiments,
 so these results are exploratory.
 
 The imagery and original canopy polygons are not included.
+Running the code
+
+I used Google Earth Engine to prepare the 2021 Sentinel-2 imagery and tree canopy reference for Badda. The GEE code is in gee_preprocessing.js.
+The script uses my uploaded Badda boundary and digitized tree canopy polygons. It exports a GeoTIFF with five input bands, the tree reference, and the study area mask.
+I used this file in Google Colab to train and test the U-Net model. The file path in the notebook needs to be changed if someone wants to run it using their own Google Drive.
+
+Data availability
+The Sentinel-2 imagery is available through Google Earth Engine. I have not uploaded the original Badda boundary or tree canopy polygons to GitHub. The repository contains the code and results from my analysis.
